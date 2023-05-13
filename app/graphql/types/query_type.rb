@@ -8,7 +8,8 @@ module Types
     # They will be entry points for queries on your schema.
 
     field :user, resolver: Resolvers::UserResolver
-
     field :users, resolver: Resolvers::UsersResolver
+    field :wine, resolver: Resolvers::WineResolver
+    field :wines, resolver: Resolvers::WinesResolver
   end
 end
