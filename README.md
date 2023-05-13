@@ -17,3 +17,9 @@ bin/rails g graphql:object User id:ID! name:String! email:String
 - ID: GraphQLでのIDの型(String)
 - 末尾 ! あり: null不許可
 - 末尾 ! なし: null許可
+
+### Mutation作成
+
+```sh
+bin/rails g graphql:mutation CreateUser
+```
