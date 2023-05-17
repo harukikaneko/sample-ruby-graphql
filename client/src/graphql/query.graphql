@@ -1,0 +1,10 @@
+query UsersCollection {
+  users {
+    id
+    name
+    email
+    wines {
+      name
+    }
+  }
+}
