@@ -6,3 +6,6 @@ migration:
 
 console:
 	rails c
+
+seed:
+	rails db:seed
