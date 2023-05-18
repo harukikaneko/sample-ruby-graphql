@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :wines
+  has_one :cellar, dependent: :destroy
 end
