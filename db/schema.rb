@@ -33,14 +33,14 @@ ActiveRecord::Schema[7.0].define(version: 20_230_518_123_556) do
 
   create_table 'wineries', force: :cascade do |t|
     t.string 'name'
-    t.text 'location'
+    t.string 'location'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end
 
   create_table 'wines', force: :cascade do |t|
     t.string 'name'
-    t.integer 'vitage'
+    t.integer 'vintage'
     t.string 'wine_type'
     t.string 'grape'
     t.string 'country'
@@ -48,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 20_230_518_123_556) do
     t.integer 'winery_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
-    t.index '"winery_id", "vintage", "name"', name: 'index_wines_on_winery_id_and_vintage_and_name', unique: true
+    t.index %w[winery_id vintage name], name: 'index_wines_on_winery_id_and_vintage_and_name', unique: true
     t.index ['winery_id'], name: 'index_wines_on_winery_id'
   end
 

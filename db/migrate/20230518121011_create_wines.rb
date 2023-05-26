@@ -4,7 +4,7 @@ class CreateWines < ActiveRecord::Migration[7.0]
   def change
     create_table :wines do |t|
       t.string :name
-      t.integer :vitage
+      t.integer :vintage
       t.string :wine_type
       t.string :grape
       t.string :country
