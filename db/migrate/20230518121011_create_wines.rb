@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateWines < ActiveRecord::Migration[7.0]
   def change
     create_table :wines do |t|
@@ -9,7 +11,7 @@ class CreateWines < ActiveRecord::Migration[7.0]
       t.string :region
 
       t.references :winery, index: true, foreign_key: true
-      t.index [:winery_id, :vintage, :name], unique: true, name: 'index_wines_on_winery_id_and_vintage_and_name'
+      t.index %i[winery_id vintage name], unique: true, name: 'index_wines_on_winery_id_and_vintage_and_name'
 
       t.timestamps
     end

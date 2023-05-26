@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Resolvers
   class WineResolver < GraphQL::Schema::Resolver
     type Types::WineType, null: false
