@@ -9,3 +9,6 @@ console:
 
 seed:
 	rails db:seed
+
+guard:
+	bundle exec guard
