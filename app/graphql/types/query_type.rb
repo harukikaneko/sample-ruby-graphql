@@ -13,5 +13,9 @@ module Types
     field :users, resolver: Resolvers::UsersResolver
     field :wine, resolver: Resolvers::WineResolver
     field :wines, resolver: Resolvers::WinesResolver
+    field :winery, resolver: Resolvers::WineryResolver
+    field :wineries, resolver: Resolvers::WineriesResolver
+    field :cellar, resolver: Resolvers::CellarResolver
+    field :cellars, resolver: Resolvers::CellarsResolver
   end
 end

@@ -8,5 +8,10 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :cellar, [CellarType], null: false
+    field :wines, [WineType], null: false
+
+    def wines
+      Loaders::AssociationLoader.for(object.class, :wine).load(object)
+    end
   end
 end

@@ -110,6 +110,61 @@
 
 
 
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cellar-instance_method" title="#cellar (instance method)">#<strong>cellar</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wines-instance_method" title="#wines (instance method)">#<strong>wines</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
 
   
   
@@ -118,11 +173,77 @@
   
   
   
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="cellar-instance_method">
+  
+    #<strong>cellar</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/graphql/types/user_type.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cellar'>cellar</span>
+  <span class='const'><span class='object_link'><a href="../Loaders.html" title="Loaders (module)">Loaders</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Loaders/AssociationLoader.html" title="Loaders::AssociationLoader (class)">AssociationLoader</a></span></span><span class='period'>.</span><span class='id identifier rubyid_for'>for</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='symbol'>:cellars</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="wines-instance_method">
+  
+    #<strong>wines</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'app/graphql/types/user_type.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_wines'>wines</span>
+  <span class='const'><span class='object_link'><a href="../Loaders.html" title="Loaders (module)">Loaders</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Loaders/AssociationLoader.html" title="Loaders::AssociationLoader (class)">AssociationLoader</a></span></span><span class='period'>.</span><span class='id identifier rubyid_for'>for</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='comma'>,</span> <span class='symbol'>:wines</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_load'>load</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
 
 </div>
 
       <div id="footer">
-  Generated on Fri May 26 21:10:43 2023 by
+  Generated on Wed May 31 22:41:26 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.34 (ruby-3.2.1).
 </div>
